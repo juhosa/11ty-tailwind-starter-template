@@ -1,0 +1,18 @@
+{
+  "name": "Eleventy-Tailwind starter",
+  "author": {
+    "name": "Juho Salli",
+    "url": "https://jsalli.com"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "scripts": {
+    "dev": "eleventy --serve & postcss src/styles/tailwind.css --o _tmp/style.css --watch",
+    "build": "ELEVENTY_PRODUCTION=true eleventy & NODE_ENV=production postcss src/styles/tailwind.css --o _site/style.css"
+  },
+  "license": "MIT"
+}
